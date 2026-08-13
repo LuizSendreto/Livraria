@@ -58,3 +58,11 @@ O CRUD de livraria possuía consultas que utilizavam diretamente dados recebidos
 A utilização de prepare(), bind_param() e execute() permite separar os dados recebidos da estrutura das consultas SQL, aumentando a segurança do sistema.
 
 Portanto, é recomendado utilizar Prepared Statements em todas as consultas que recebem dados externos, principalmente nas operações de cadastro, atualização, exclusão e edição dos livros.
+
+# Troca usando prepared statments
+
+O funcionamento do sistema continua o mesmo: o usuário cadastra um livro e ele é salvo no banco de dados.
+
+A única diferença é que agora o cadastro está mais seguro contra SQL Injection, porque os dados enviados pelo usuário não são tratados como parte da estrutura do comando SQL.
+
+Ou seja, foi uma alteração pequena no projeto, mas suficiente para demonstrar o uso de Prepared Statements em uma operação INSERT do CRUD.

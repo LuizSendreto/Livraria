@@ -3,6 +3,8 @@
 include "infra/conexao.php";
 $livros = mysqli_query($conexao, "SELECT * FROM livros");
 
+//faz conexão com o banco de dados e retorna todos os livros cadastrados na tabela "livros" para serem exibidos na página principal.
+
 ?>
 
 <!DOCTYPE html>
@@ -56,6 +58,7 @@ $livros = mysqli_query($conexao, "SELECT * FROM livros");
                     </tr>
                 <?php } ?>
             </table>
+
         </div>
 
     </main>
